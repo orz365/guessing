@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@import 
+		"../base/mixin",
+		"../base/variables";
+/**
+* 登录模块样式
+*/
+.moin-login-box{
+	padding:30px 15px;
+	
+	label{
+		color:$theme_color;
+	}
+	
+	.sub-desc{
+		padding-left:15px;
+	}
+}

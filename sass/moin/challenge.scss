@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import 
+		"../base/mixin",
+		"../base/variables";
+
+
+.moin-challenge-tab{
+	
+	width:100%;
+	@include clearfix;
+	
+	ul{
+		@include clearfix;
+		text-align:center;
+		width:300px;
+		margin:0 auto;
+		li{
+			float:left;
+			width:50%;
+			cursor:pointer;
+			a{
+				font-size:18px;
+				color:#999999;
+				padding:5px 0px;
+				&.active{
+					border-bottom:1px solid #333333;
+					color:#333333;
+				}
+				&:hover{
+					border-bottom:1px solid #000000;
+				}
+			}
+		}
+		@media screen and (max-width:400px){
+			width:200px;
+		}
+	}
+}
+
+
+.moin-challenge-list{
+	.ui-list-img{
+		width:100px;
+		height:100px;
+		overflow:hidden;
+		img{
+			width:100%;
+		}	
+	}
+	.ui-list-info{
+		-webkit-box-pack:start;
+		p{
+			font-size:14px;
+			color:#777;
+		}
+		.gold-s{
+			height:16px;
+		}
+	}
+}
+
+
+.moin-progress-bar{
+	width: 100px;
+    //border: 1px solid #dddddd;
+    display: inline-block;
+    line-height:14px;
+    height:14px;
+    border-radius: 10px;
+    background: #ececec;
+	.moin-progress-rate{
+		display: inline-block;
+	    background: #ee5748;
+	    height: 14px;
+	    width: 0px;
+	    box-sizing: border-box;
+	    border-radius: 10px;
+	    -webkit-transition:width .5s ease-in;
+	}
+}
+
+
+
+.moin-daily-list{
+	.gold-s{
+		height:16px;
+	}
+}

@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "../base/variables",
+		"../base/mixin";
+
+/**
+* 头信息
+*/
+.ui-header{
+	background:$header-bg;
+	border-bottom:$header-border-bottom;
+	h1{
+		color:$header-color;
+	}
+	.moin-header-btn i{
+		color:$header-color;
+	}
+}
+
+.ui-header .moin-header-btn.moin-left-btn{
+	position:absolute;left:0px;top:0px;
+	height:$header-height;
+	padding:0px 10px;
+	min-width:25px;
+	text-align:center;
+	&:active{
+		background:$header-btn-active-bg;
+	}
+} 
+
+.ui-header .moin-header-btn.moin-right-btn{
+	position:absolute;right:0px;top:0px;
+	height:$header-height;
+	padding:0px 10px;
+	min-width:25px;
+	text-align:center;
+	&:active{
+		background:$header-btn-active-bg;
+	}
+}

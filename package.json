@@ -1,0 +1,16 @@
+{
+  "name": "ZeroUI",
+  "version": "1.0.0",
+  "title": "ZeroUI",
+  "homepage": "魔映",
+  "author": "ashtray",
+  "licenses": "MIT",
+  "description": "guessing竞猜",
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "main": "Gruntfile.js"
+}

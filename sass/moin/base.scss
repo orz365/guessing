@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "../base/variables";
+
+body{
+	background-color:$body-bg;
+}
+
+
+.sub-desc{
+	font-size:$moin-subdesc-size;
+}
+
+.margin-top20{
+	margin-top:30px;
+}

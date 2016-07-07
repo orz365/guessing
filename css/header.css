@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/**
+* 头信息
+*/
+.ui-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0; }
+  .ui-header h1 {
+    color: rgba(0, 0, 0, 0.8); }
+  .ui-header .moin-header-btn i {
+    color: rgba(0, 0, 0, 0.8); }
+
+.ui-header .moin-header-btn.moin-left-btn {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 45px;
+  padding: 0px 10px;
+  min-width: 25px;
+  text-align: center; }
+  .ui-header .moin-header-btn.moin-left-btn:active {
+    background: #e5e6e7; }
+
+.ui-header .moin-header-btn.moin-right-btn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 45px;
+  padding: 0px 10px;
+  min-width: 25px;
+  text-align: center; }
+  .ui-header .moin-header-btn.moin-right-btn:active {
+    background: #e5e6e7; }
+
+/*# sourceMappingURL=header.css.map */

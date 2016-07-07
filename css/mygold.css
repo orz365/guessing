@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/**
+* 我的魔豆
+*/
+.moin-mygold-box li {
+  padding: 5px; }
+  .moin-mygold-box li .moin-mygold-item {
+    height: 125px;
+    padding: 10px 5px;
+    background: red;
+    text-align: center;
+    color: #ffffff; }
+    .moin-mygold-box li .moin-mygold-item img {
+      height: 20px; }
+    .moin-mygold-box li .moin-mygold-item:nth-child(2) {
+      background: #52ca95; }
+
+/*# sourceMappingURL=mygold.css.map */

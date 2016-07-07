@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+@import 
+		"../base/mixin",
+		"../base/variables";
+
+
+.moin-filminfo-tab{
+	@include clearfix;
+
+	ul{
+		@include clearfix;
+		width:100%;
+		text-align:center;
+		li{
+			float:left;
+			text-align:center;
+			padding:0px 10px;
+			&:not(.v-line) a{
+				width:100%;
+				color:#333;
+				padding:5px;
+				&.active{
+					border-bottom:1px solid #888;
+				}
+				&:active{
+					color:red;
+				}
+			}
+			&.v-line{
+				padding:0px;
+				a{
+					border-right:1px solid #888;
+				}
+			}
+		}
+	}
+
+}
+
+
+.moin-film-cast-box{
+	overflow-x:auto;
+	overflow-y:hidden;
+	padding-top:10px;
+	@include clearfix;
+	ul{
+		@include clearfix;
+		width:1200px;
+		li{
+			width:150px;
+			float:left;
+			text-align:center;
+			
+			.rank{
+				font-size:18px;
+				font-weight:bold;
+				text-align:left;
+				padding-left:10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import 
+		"../base/mixin",
+		"../base/variables";
+
+/**
+* 我的魔豆
+*/
+.moin-mygold-box{
+	 
+	
+	li{
+		padding:5px;
+		.moin-mygold-item{
+			height:125px;
+			padding:10px 5px;
+			background:red;
+			text-align:center;
+			color:#ffffff;
+			img{
+				height:20px;
+			}
+			&:nth-child(2){
+				background:#52ca95;
+			}
+		}
+	}
+	
+	
+	
+}

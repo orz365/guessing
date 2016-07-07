@@ -1,0 +1,30 @@
+@charset "utf-8";
+/**
+* 魔映竞猜平台样式文件
+*/
+@import 
+	"base/mixin",
+	"base/variables",
+	
+	"moin/base",
+	"moin/header",
+	"moin/login",
+	"moin/checkin",  //签到
+	"moin/challenge",  //挑战任务
+	"moin/filminfo", //影片资料
+	"moin/index", //影片资料
+	"moin/mygold", //我的魔豆
+	"moin/button";
+	
+@media screen and (min-width:780px){
+	.ui-container{
+		width:780px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.zhezhao,.ui-header,.ui-footer{
+		width:780px;
+		left:50%;
+		margin-left:-390px;
+	}
+}

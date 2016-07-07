@@ -1,0 +1,73 @@
+.moin-challenge-tab {
+  width: 100%; }
+  .moin-challenge-tab:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .moin-challenge-tab {
+    height: 1px; }
+  .moin-challenge-tab ul {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto; }
+    .moin-challenge-tab ul:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    * html .moin-challenge-tab ul {
+      height: 1px; }
+    .moin-challenge-tab ul li {
+      float: left;
+      width: 50%;
+      cursor: pointer; }
+      .moin-challenge-tab ul li a {
+        font-size: 18px;
+        color: #999999;
+        padding: 5px 0px; }
+        .moin-challenge-tab ul li a.active {
+          border-bottom: 1px solid #333333;
+          color: #333333; }
+        .moin-challenge-tab ul li a:hover {
+          border-bottom: 1px solid #000000; }
+    @media screen and (max-width: 400px) {
+      .moin-challenge-tab ul {
+        width: 200px; } }
+
+.moin-challenge-list .ui-list-img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden; }
+  .moin-challenge-list .ui-list-img img {
+    width: 100%; }
+.moin-challenge-list .ui-list-info {
+  -webkit-box-pack: start; }
+  .moin-challenge-list .ui-list-info p {
+    font-size: 14px;
+    color: #777; }
+  .moin-challenge-list .ui-list-info .gold-s {
+    height: 16px; }
+
+.moin-progress-bar {
+  width: 100px;
+  display: inline-block;
+  line-height: 14px;
+  height: 14px;
+  border-radius: 10px;
+  background: #ececec; }
+  .moin-progress-bar .moin-progress-rate {
+    display: inline-block;
+    background: #ee5748;
+    height: 14px;
+    width: 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -webkit-transition: width .5s ease-in; }
+
+.moin-daily-list .gold-s {
+  height: 16px; }
+
+/*# sourceMappingURL=challenge.css.map */

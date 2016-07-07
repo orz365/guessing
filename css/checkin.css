@@ -1,0 +1,140 @@
+@charset "UTF-8";
+.moin-check-body {
+  background: #f0f3f5; }
+
+.moin-check-bg {
+  background: #ffffff; }
+
+.moin-check-box .moin-check-info {
+  background: #eff3f6;
+  height: 100px; }
+.moin-check-box .moin-check-circle {
+  position: relative;
+  padding: 20px 0px;
+  border: 0px solid red;
+  width: 100%; }
+  .moin-check-box .moin-check-circle:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .moin-check-box .moin-check-circle {
+    height: 1px; }
+  .moin-check-box .moin-check-circle ul {
+    width: 100%;
+    text-align: center; }
+    .moin-check-box .moin-check-circle ul:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    * html .moin-check-box .moin-check-circle ul {
+      height: 1px; }
+  .moin-check-box .moin-check-circle ul li {
+    float: left;
+    width: 14%; }
+    .moin-check-box .moin-check-circle ul li .check-circle {
+      -moz-border-radius: 80%;
+      -webkit-border-radius: 80%;
+      border-radius: 80%;
+      text-align: center;
+      width: 40px;
+      line-height: 40px;
+      height: 40px;
+      border: 1px solid #d4d4d4;
+      background: #ffffff;
+      display: inline-block;
+      color: #d4d4d4;
+      clear: both; }
+    .moin-check-box .moin-check-circle ul li.unchecked .check-circle {
+      background: #d4d4d4;
+      color: #f5f5f5; }
+    .moin-check-box .moin-check-circle ul li.checked .check-circle {
+      border: 1px solid #f76383;
+      background: #f76383;
+      color: #f5f5f5; }
+    .moin-check-box .moin-check-circle ul li.checked .check-date {
+      color: #f76383; }
+  .moin-check-box .moin-check-circle .line {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid red;
+    position: absolute;
+    top: 40px;
+    z-index: -1; }
+  @media screen and (min-width: 780px) {
+    .moin-check-box .moin-check-circle ul li .check-circle {
+      width: 75px;
+      height: 75px;
+      line-height: 75px; }
+    .moin-check-box .moin-check-circle .line {
+      top: 60px; } }
+
+p.line-space {
+  display: block;
+  height: 10px;
+  background: #f0f3f5; }
+
+.moin-check-title {
+  height: 40px;
+  line-height: 40px;
+  border: 0px solid red;
+  overflow: hidden; }
+  .moin-check-title h4 {
+    display: inline-block;
+    height: 30px;
+    background: #e1dfd2;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 0px 20px 0px 40px;
+    margin-left: -20px;
+    line-height: 30px; }
+
+.moin-check-desc .moin-check-detail {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.check-tip-img {
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  display: block;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  margin-top: -150px; }
+  .check-tip-img img {
+    width: 300px; }
+  .check-tip-img p {
+    padding-top: 10px;
+    font-size: 24px;
+    font-family: '黑体'; }
+
+/**
+* 遮罩
+*/
+.zhezhao-bg {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+
+.zhezhao-content {
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  color: white; }
+
+/*# sourceMappingURL=checkin.css.map */

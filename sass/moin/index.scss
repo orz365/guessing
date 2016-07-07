@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+@import 
+		"../base/mixin",
+		"../base/variables";
+
+.moin-index-tab{
+	@include clearfix;
+
+	ul{
+		@include clearfix;
+		width:100%;
+		text-align:center;
+		li{
+			float:left;
+			text-align:center;
+			padding:0px 10px;
+			&:not(.v-line) a{
+				width:100%;
+				color:#333;
+				padding:5px;
+				&.active{
+					color:red; 
+				}
+				&:active{
+					color:red;
+				}
+			}
+			&.v-line{
+				padding:0px;
+				a{
+					border-right:1px solid #888;
+				}
+			}
+		}
+	}
+	
+}
+
+
+.moin-index-box{
+	
+	.moin-index-item{
+		padding:10px 10px;
+		img{
+			width:100%;
+			display:block;
+		}
+	}	
+}
+/**
+* 魔映首页的签到按钮样式
+*/
+.moin-index-checkin-btn{
+	@include border-radius(20px);
+	height:30px;
+	line-height:30px;
+	border:1px solid $main-color;
+	background:$main-color;
+	
+	position:fixed;
+	right:-20px;
+	top:80px;
+	padding:5px 25px 5px 20px;
+	color:#ffffff;
+	img{
+		height:20px;
+		vertical-align:middle;
+	}
+	&:active{
+		background:$main-color-active;
+	}	
+}

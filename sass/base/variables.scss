@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+$main-color:                #ff738f;
+$main-color-active:         #ff91a7;
+
+
+//通用变量
+$theme_color:               #333; //theme color ; 中文
+$theme_font_size:           16px; //主题文字大小 
+$theme_link_color:          #35BFFF;  //文字链接颜色
+$theme_title_font_family:   '黑体'; //header的字体 
+
+$body-bg:                   #ffffff;
+
+$header-height:         	45px;
+$header-bg:                 #ffffff;
+$header-color:				rgba(0,0,0,.8);
+$header-border-bottom:      1px solid #e0e0e0;
+
+
+
+//moin
+$header-btn-bg:             #f0f0f0;
+$header-btn-active-bg:      #e5e6e7;
+
+
+$moin-btn-bg:               #fdfdfd;
+$moin-btn-color:            #000000;
+$moin-btn-active-bg:        #d4d4d4;
+$moin-btn-active-color:     #ffffff;
+$moin-subdesc-size:         1em;
+$moin-subdesc-color:        #f0f0f0;            

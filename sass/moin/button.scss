@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+@import "../base/variables",
+		"../base/mixin";
+
+
+.moin-btn,.moin-btn-lg,.moin-btn-s{
+	
+	height:30px;
+	line-height:30px;
+	 
+	padding:0px 11px;
+	min-width:55px;
+	
+	color:$moin-btn-color;
+	background-color:$moin-btn-bg;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($moin-btn-bg), to($moin-btn-bg));
+	border:1px solid #cacccd;
+	outline:0;
+	@include border-radius(20px);
+	&:not(:disabled):not(.disabled):active{
+		background:$moin-btn-active-bg;
+		color:$moin-btn-active-color;
+		background-image: -webkit-gradient(linear, left top, left bottom,from($moin-btn-active-bg),to($moin-btn-active-bg));
+	}
+	&:disabled{
+		border: 0;
+		color: #cccccc;
+		background: #e9ebec;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+	}
+	
+	
+}
+
+.moin-btn-lg{
+	height:40px;
+	width:100%;
+	line-height:40px;
+	 
+	@include border-radius(5px);
+	&:not(:disabled):active{
+		background:#f0f0f0;
+	}
+}
+
+.moin-btn-primary{
+	background-color: $main-color;
+    border-color: #f66282;
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(.5, $main-color), to($main-color));
+    color: #fffffd;
+    background-clip: padding-box;
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background: $main-color-active;
+        border-color: #D45772;
+        color: #FFA7BA;
+        background-clip: padding-box;
+    }
+}
+
+.moin-btn-circle{
+
+}
+
+.moin-btn-r20{
+	@include border-radius(20px);
+}

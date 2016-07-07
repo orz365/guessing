@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.moin-index-tab:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+* html .moin-index-tab {
+  height: 1px; }
+.moin-index-tab ul {
+  width: 100%;
+  text-align: center; }
+  .moin-index-tab ul:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .moin-index-tab ul {
+    height: 1px; }
+  .moin-index-tab ul li {
+    float: left;
+    text-align: center;
+    padding: 0px 10px; }
+    .moin-index-tab ul li:not(.v-line) a {
+      width: 100%;
+      color: #333;
+      padding: 5px; }
+      .moin-index-tab ul li:not(.v-line) a.active {
+        color: red; }
+      .moin-index-tab ul li:not(.v-line) a:active {
+        color: red; }
+    .moin-index-tab ul li.v-line {
+      padding: 0px; }
+      .moin-index-tab ul li.v-line a {
+        border-right: 1px solid #888; }
+
+.moin-index-box .moin-index-item {
+  padding: 10px 10px; }
+  .moin-index-box .moin-index-item img {
+    width: 100%;
+    display: block; }
+
+/**
+* 魔映首页的签到按钮样式
+*/
+.moin-index-checkin-btn {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #ff738f;
+  background: #ff738f;
+  position: fixed;
+  right: -20px;
+  top: 80px;
+  padding: 5px 25px 5px 20px;
+  color: #ffffff; }
+  .moin-index-checkin-btn img {
+    height: 20px;
+    vertical-align: middle; }
+  .moin-index-checkin-btn:active {
+    background: #ff91a7; }
+
+/*# sourceMappingURL=index.css.map */
