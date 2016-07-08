@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@import 
+		"../base/mixin",
+		"../base/variables";
+
+
+.moin-product-box{
+	.moin-product-img{
+		img{
+			display:block;
+			width:100%;
+		}
+	}
+	
+	.moin-product-info{ 
+		.outer{
+			display:-webkit-box;
+			display:box;
+		 
+			.float-left{
+				-webkit-box-flex:1
+			}
+			.float-right{
+				    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-box-pack: center; 	
+			}
+		}
+		.product-title{
+			font-size:18px;
+		}
+		.product-gold{
+			font-size:1.5em;
+			color:$main-color;
+		}
+		.product-state{
+			color:#a1a1a1;
+		}
+		.product-express{
+			color:#a1a1a1;
+		}
+	} 
+}

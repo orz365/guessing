@@ -10,12 +10,29 @@
 	"moin/header",
 	"moin/login",
 	"moin/checkin",  //签到
+	"moin/product_detail",  //商品详情
+	"moin/gold_detail",  //魔豆明细
 	"moin/challenge",  //挑战任务
 	"moin/filminfo", //影片资料
 	"moin/index", //影片资料
 	"moin/mygold", //我的魔豆
+	"moin/slot_machines", //疯狂老虎机
 	"moin/button";
-	
+
+.moin-subtitle{
+	height:40px;
+	line-height:40px;
+	border:0px solid red;
+	overflow:hidden;
+	h4{
+		display:inline-block;
+		height:30px;
+		line-height:30px;
+		color:#a1a1a1;
+		font-size:1em;
+	}
+}
+
 @media screen and (min-width:780px){
 	.ui-container{
 		width:780px;

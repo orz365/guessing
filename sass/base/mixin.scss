@@ -10,15 +10,32 @@
   * html & { height: 1px }
 }
 
-
-@mixin box-radius($shadows...){
+/**
+* 阴影
+*/
+@mixin box-shadow($shadows...){
 	-moz-box-shadow: $shadows;
 	-webkit-box-shadow: $shadows;
 	box-shadow: $shadows;
 }
 
+/**
+* 圆角
+*/
 @mixin border-radius($radius...){
 	-moz-border-radius:$radius;
 	-webkit-border-radius:$radius;
 	border-radius:$radius;	
+}
+
+@mixin moin-icon-golds($font-size,$url){
+	height:1.5em;
+	line-height:1.5em;
+	font-size:$font-size;
+	display:inline-block;
+	background-image:$url;
+	background-size:2em;	
+	background-repeat:no-repeat;
+	padding-left:2.2em;
+
 }

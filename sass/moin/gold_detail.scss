@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import 
+		"../base/mixin",
+		"../base/variables";
+
+
+.moin-gold-detail-head{
+	
+}
+
+.moin-gold-detail-box{
+
+	table{
+	
+		thead{
+			th{
+				background:#f0f0f0;
+			}
+		}
+		    line-height: 40px;
+	    text-align: center;
+	    background-color: #fff;
+	}
+}
+
+
+.float-outer{
+	display:-webkit-box;
+	display:box;
+ 
+	.float-left{
+		-webkit-box-flex:1
+	}
+	.float-right{
+		    display: -webkit-box;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-pack: center; 	
+	}
+}

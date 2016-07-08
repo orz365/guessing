@@ -47,14 +47,29 @@
 
 .moin-btn-primary{
 	background-color: $main-color;
-    border-color: #f66282;
+    border-color: $main-color-active;
     background-image: -webkit-gradient(linear,left top, left bottom, color-stop(.5, $main-color), to($main-color));
     color: #fffffd;
     background-clip: padding-box;
     &:not(.disabled):not(:disabled):active,
     &.active{
         background: $main-color-active;
-        border-color: #D45772;
+        border-color: $main-color-active;
+        color: #FFA7BA;
+        background-clip: padding-box;
+    }
+}
+//镂空的按钮
+.moin-btn-primary-hollow{
+	background-color: $body-bg;
+    border-color: $main-color;
+    background-image: -webkit-gradient(linear,left top, left bottom, color-stop(.5, $body-bg), to($body-bg));
+    color: $main-color;
+    background-clip: padding-box;
+    &:not(.disabled):not(:disabled):active,
+    &.active{
+        background: $main-color-active;
+        border-color: $main-color-active;
         color: #FFA7BA;
         background-clip: padding-box;
     }
