@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/**
+* 阴影
+*/
+/**
+* 圆角
+*/
+.moin-product-box .moin-product-img img {
+  display: block;
+  width: 100%; }
+.moin-product-box .moin-product-info .outer {
+  display: -webkit-box;
+  display: box; }
+  .moin-product-box .moin-product-info .outer .float-left {
+    -webkit-box-flex: 1; }
+  .moin-product-box .moin-product-info .outer .float-right {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center; }
+.moin-product-box .moin-product-info .product-title {
+  font-size: 18px; }
+.moin-product-box .moin-product-info .product-gold {
+  font-size: 1.5em;
+  color: #ff738f; }
+.moin-product-box .moin-product-info .product-state {
+  color: #a1a1a1; }
+.moin-product-box .moin-product-info .product-express {
+  color: #a1a1a1; }
+
+/*# sourceMappingURL=product_detail.css.map */

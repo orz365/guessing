@@ -1,6 +1,13 @@
+@charset "UTF-8";
 #main {
   color: red; }
 
+/**
+* 阴影
+*/
+/**
+* 圆角
+*/
 .zero-hide {
   display: none !important; }
 

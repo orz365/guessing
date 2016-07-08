@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/**
+* 阴影
+*/
+/**
+* 圆角
+*/
 .moin-index-tab:after {
   content: ".";
   display: block;

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+* 阴影
+*/
+/**
+* 圆角
+*/
+/**
+* 老虎机
+*/
+.slot-machines-shell {
+  width: 300px;
+  margin: 0 auto;
+  height: 500px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid red; }
+  .slot-machines-shell .slot-machines-screen {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal; }
+    .slot-machines-shell .slot-machines-screen .slot-machines-box {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      height: 100px;
+      line-height: 100px;
+      overflow: scroll;
+      width: 100px;
+      border: 1px solid;
+      -webkit-box-flex: 1; }
+      .slot-machines-shell .slot-machines-screen .slot-machines-box .slot-machines-item {
+        height: 100px;
+        border-bottom: 1px solid red; }
+        .slot-machines-shell .slot-machines-screen .slot-machines-box .slot-machines-item img {
+          width: 100%;
+          vertical-align: middle;
+          display: inline-block; }
+
+/*# sourceMappingURL=slot_machines.css.map */

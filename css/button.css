@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/**
+* 阴影
+*/
+/**
+* 圆角
+*/
 .moin-btn, .moin-btn-lg, .moin-btn-s {
   height: 30px;
   line-height: 30px;
@@ -34,13 +41,25 @@
 
 .moin-btn-primary {
   background-color: #ff738f;
-  border-color: #f66282;
+  border-color: #ff91a7;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #ff738f), to(#ff738f));
   color: #fffffd;
   background-clip: padding-box; }
   .moin-btn-primary:not(.disabled):not(:disabled):active, .moin-btn-primary.active {
     background: #ff91a7;
-    border-color: #D45772;
+    border-color: #ff91a7;
+    color: #FFA7BA;
+    background-clip: padding-box; }
+
+.moin-btn-primary-hollow {
+  background-color: #ffffff;
+  border-color: #ff738f;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #ffffff), to(#ffffff));
+  color: #ff738f;
+  background-clip: padding-box; }
+  .moin-btn-primary-hollow:not(.disabled):not(:disabled):active, .moin-btn-primary-hollow.active {
+    background: #ff91a7;
+    border-color: #ff91a7;
     color: #FFA7BA;
     background-clip: padding-box; }
 
