@@ -24,4 +24,14 @@
     .moin-mygold-box li .moin-mygold-item:nth-child(2) {
       background: #52ca95; }
 
+.moin-gift-box li {
+  padding: 5px; }
+  .moin-gift-box li .moin-product-info {
+    padding: 5px; }
+    .moin-gift-box li .moin-product-info .product-title {
+      font-size: 14px; }
+    .moin-gift-box li .moin-product-info .product-gold {
+      font-size: 14px;
+      color: #ff738f; }
+
 /*# sourceMappingURL=mygold.css.map */

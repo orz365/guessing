@@ -1,4 +1,15 @@
 $(function(){
+	$('.tab-head-item').on('click',function(e){
+		var index = $(this).index();
+		
+		$('.tab-content-item').hide();
+		$('.tab-content-item').eq(index).show();
+		$('.tab-head-bottom').css({
+			'left':$(this).offset().left,
+			'width':$(this).width()
+		});
+	})
+	
 	
 	$.fn.moinProgress  = function(){
 		var $this = $(this);

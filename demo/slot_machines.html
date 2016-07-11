@@ -51,29 +51,35 @@
   	
   	 	<div class="moin-panel slot-machines-shell">
   	 		<div class="slot-machines-screen">
-  	 			<div class="slot-machines-box" id="slot-machines-box">
+  	 			<div class="slot-machines-box" id="slot-machines-box"  >
   	 				<div class="slot-machines-item">
 	  	 				<img alt="" src="../img/demo.png">
 	  	 			</div>
 	  	 			<div class="slot-machines-item">
-	  	 				<img alt="" src="../img/demo.png">
+	  	 				<img alt="" src="../img/film-demo.png">
 	  	 			</div><div class="slot-machines-item">
-	  	 				<img alt="" src="../img/demo.png">
+	  	 				<img alt="" src="../img/test-index02.png">
 	  	 			</div>
   	 			</div>
-  	 			<div class="slot-machines-box">
+  	 			<div class="slot-machines-box" id="slot-machines-box2">
   	 				<div class="slot-machines-item">
 	  	 				<img alt="" src="../img/demo.png">
 	  	 			</div>
-	  	 			<div class="slot-machines-item"></div>
-	  	 			<div class="slot-machines-item"></div>
+	  	 			<div class="slot-machines-item">
+	  	 				<img alt="" src="../img/film-demo.png">
+	  	 			</div><div class="slot-machines-item">
+	  	 				<img alt="" src="../img/test-index02.png">
+	  	 			</div>
   	 			</div>
-  	 			<div class="slot-machines-box">
+  	 			<div class="slot-machines-box" id="slot-machines-box3">
   	 				<div class="slot-machines-item">
 	  	 				<img alt="" src="../img/demo.png">
 	  	 			</div>
-	  	 			<div class="slot-machines-item"></div>
-	  	 			<div class="slot-machines-item"></div>
+	  	 			<div class="slot-machines-item">
+	  	 				<img alt="" src="../img/film-demo.png">
+	  	 			</div><div class="slot-machines-item">
+	  	 				<img alt="" src="../img/test-index02.png">
+	  	 			</div>
   	 			</div>
   	 		</div>
   	 		
@@ -95,18 +101,41 @@
 		$(function(){
 			var tm = $("#slot-machines-box").slotMachine({
 				active	:2,
-				delay	: 1000,
-				repeat	: 1500,
+				delay	: 500,
 				spins:2,
 				randomize : function(activeElementIndex){
 			        return 0;
 			    }
 			});
+			var tm2 = $("#slot-machines-box2").slotMachine({
+				active	:2,
+				delay	: 500,
+				spins:2,
+				randomize : function(activeElementIndex){
+			        return 1;
+			    }
+			});
+			var tm3 = $("#slot-machines-box3").slotMachine({
+				active	:2,
+				delay	: 500,
+				spins:2,
+				randomize : function(activeElementIndex){
+			        return 2;
+			    }
+			});
 			$('#ttt').on('click',function(){
 				tm.stop(true);
+				tm2.stop(true);
+				tm3.stop(true);
 			})
 			$('#ttt2').on('click',function(){
 				tm.shuffle(10,function(){});
+				setTimeout(function(){
+					tm2.shuffle(15,function(){});
+				}, 500);
+				setTimeout(function(){
+					tm3.shuffle(15,function(){});
+				}, 1000);
 			})
 		})
 		</script>

@@ -52,3 +52,79 @@ body{
 i.moin-icon-golds{
 	@include moin-icon-golds(16px,url('../img/golds.png'));
 }
+
+.moin-text-center{
+	text-align:center;
+}
+.moin-tab{
+	.moin-tab-head{
+		position:relative;
+		display:-webkit-box;
+		-webkit-box-orient:horizontal;
+		.tab-head-item{
+			height:40px;
+			line-height:40px;
+			-webkit-box-flex:1;
+			&.active{
+				color:$main-color;
+			}
+		}
+		//tab标题下面的选中条
+		.tab-head-bottom{
+			display:block;
+			position:absolute;
+			width:33.333%;
+			height:4px;
+			background:$main-color;
+			bottom:0px;
+			left:0px;
+			-webkit-transition:left .1s ease-in;
+		}
+	}
+	.moin-tab-content{
+		.tab-content-item{
+			width:100%;
+			 
+			display:none;
+		}
+	}
+}
+
+
+.moin-list{
+	padding-left:10px;
+	padding-right:10px;
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	.moin-list-img{
+		padding:10px 10px 10px 0px;
+		img{
+			width:100%;
+			display:block;
+		}
+		&.moin-img-40{
+			width:40px;
+		}
+		&.moin-img-80{
+			width:80px;
+		}
+		&.moin-img-100{
+			width:100px;
+		}
+	}
+	.moin-list-info{
+		padding-top:10px ;
+		padding-bottom:10px;
+		-webkit-box-flex:1;
+		display:-webkit-box;
+		-webkit-box-orient:vertical;
+		
+		h4{
+			font-size:16px;
+		}
+		p{
+			font-size:14px;
+			color:#777;
+		}
+	}
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>票房预测</title>
+    <link href="http://cdn.bootcss.com/FrozenUI/1.3.0/css/frozen.css" rel="stylesheet">
+    <link href="../css/zeroui.css" rel="stylesheet">
+    <link href="../css/moin.css" rel="stylesheet"> 
+    <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body class="moin-check-body">
+  		
+  	<header class="ui-header ui-border-b">
+  		<div class="moin-header-btn moin-left-btn">
+  		<i class="ui-icon-return"></i>
+  		</div>
+  		<h1 class="ui-nowrap" style="padding-left: 40px;
+    padding-right: 40px;">独立日首日票房预测</h1>
+  		<div class="moin-header-btn moin-right-btn">
+  		<i class="ui-icon-home"></i>
+  		</div>
+  	</header>
+  	
+  	<section class="ui-container moin-check-bg" style="margin-bottom:80px;">
+  	 	<div class="moin-guessing-box">
+  	 	
+  	 	</div>
+  	 	
+  	 	<!-- 竞猜相关的信息 -->
+  	 	<div class="moin-guessing-relative">
+  	 		<div class="moin-tab">
+  	 			<div class="moin-tab-head ui-border-b">
+  	 				<div class="tab-head-item moin-text-center">影片资料</div>
+  	 				<div class="tab-head-item moin-text-center" >同类票房参考</div>
+  	 				<div class="tab-head-item moin-text-center">大家猜多少</div>
+  	 				<div class="tab-head-bottom"></div>
+	  	 		</div>
+	  	 		<div class="moin-tab-content">
+	  	 			<div class="tab-content-item moin-film-info-content">
+	  	 			   
+	  	 			</div>
+	  	 			<div class="tab-content-item">
+	  	 			 	<div class="moin-list ui-border-b">
+	  	 			   	<div class="moin-list-img moin-img-80">
+	  	 			   		<img src="../img/film-demo.png"/>
+	  	 			   	</div>
+	  	 			   	<div class="moin-list-info">
+	  	 			   		<h4 class="ui-nowrap">南口1937</h4>
+	  	 			   		<p>导演：朱丹</p>
+	  	 			   		<p>主演：孙看，孙洪涛，刘忠元，孙看，孙洪涛，刘忠元</p>
+	  	 			   	</div>
+	  	 			   </div>
+	  	 			    <div class="moin-subtitle ui-whitespace">
+				   			<h4>首日票房分析图</h4>
+				   		</div>
+	  	 			   <div class="moin-trend-chart">
+	  	 			   	<div id="main" style=" height:400px;"></div>
+	  	 			   </div>
+	  	 			   
+	  	 			   
+	  	 			   <div class="moin-list  ui-border-b">
+	  	 			   	<div class="moin-list-img moin-img-80">
+	  	 			   		<img src="../img/film-demo.png"/>
+	  	 			   	</div>
+	  	 			   	<div class="moin-list-info">
+	  	 			   		<h4 class="ui-nowrap">南口1937</h4>
+	  	 			   		<p>导演：朱丹</p>
+	  	 			   		<p>主演：孙看，孙洪涛，刘忠元，孙看，孙洪涛，刘忠元</p>
+	  	 			   	</div>
+	  	 			   </div>
+	  	 			</div>
+	  	 			<div class="tab-content-item moin-other-guess-content">
+	  	 			 	<div class="hot-box">
+	  	 			 		<div class="hot-data">
+	  	 			 			<div class="hot-data-item">80</div>
+	  	 			 			<div class="hot-data-item">50</div>
+	  	 			 			<div class="hot-data-item">50</div>
+	  	 			 			<div class="hot-data-item">50</div>
+	  	 			 			<div class="hot-data-item">50</div>
+	  	 			 			<div class="hot-data-item">50</div>
+	  	 			 			<div class="hot-data-item">50</div>
+	  	 			 			<div class="hot-data-item">50</div>
+	  	 			 			<div class="hot-data-item">40</div>
+	  	 			 			<div class="hot-data-item">30</div>
+	  	 			 			<div class="hot-data-item">20</div>
+	  	 			 			<div class="hot-data-item">10</div>
+	  	 			 			<div class="hot-data-item">1</div>
+	  	 			 		</div>
+	  	 			 		<div class="hot-content" id="test">
+	  	 			 			<div class="test" ></div>
+	  	 			 		</div>
+	  	 			 	</div>
+	  	 			</div>
+	  	 		</div>
+  	 		</div>
+  	 	</div>
+  	</section>
+  	
+  	<footer class="ui-footer ui-whitespace ui-border-t moin-check-bg" style="line-height:56px;">
+  		<button class="moin-btn-lg moin-btn-primary">去赚取更多魔豆》</button>
+  	</footer>
+  </body>
+  
+  <script src="http://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+  <script src="../js/moin.js"></script>
+  <script src="http://cdn.bootcss.com/echarts/3.2.1/echarts.js"></script>
+  <script type="text/javascript">
+  	
+  
+       $(function(){
+    	   $('#main').width($(window).width())
+    	   window.resize = function(){
+    		   $('#main').width($(window).width())
+    	   };
+    	   
+    	    // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: ''
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子","衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'line',
+                data: [5, 20, 36, 10, 10, 20,5, 20, 36, 10, 10, 20]
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        
+         
+        var s_width,s_height;
+        var origin_height = $('.test').height();
+         $('#test').on('touchstart',function(event){
+        	 event = event || window.event;
+        	 var x = event.originalEvent.touches[0].clientX;
+        	 var y = event.originalEvent.touches[0].clientY;
+        	 var x2 = event.originalEvent.touches[1].clientX;
+        	 var y2 = event.originalEvent.touches[1].clientY;
+        	 s_width =  Math.abs(x2-x);
+        	 s_height =  Math.abs(y2-y);
+        	 origin_height = $('.test').height();
+         })
+         $('#test').on('touchmove',function(event){
+        	 event = event || window.event;
+        	 var x = event.originalEvent.changedTouches[0].clientX;
+        	 var y = event.originalEvent.changedTouches[0].clientY;
+        	 var x2 = event.originalEvent.changedTouches[1].clientX;
+        	 var y2 = event.originalEvent.changedTouches[1].clientY;
+        	 var tmp = Math.abs(x2-x) + '==' + Math.abs(y2-y);
+        	 var width =  Math.abs(x2-x);
+        	 var height =  Math.abs(y2-y);
+        	 
+        	 console.log(tmp);
+        	 /* test.style.left= (x-50)+'px';
+        	 test.style.top = (y-50)+'px'; */
+        	// $('.test').width(width);
+        	 height = height - s_height;
+        	 
+        	 $('.moin-text-center').text(height);
+        	 
+        	 $('.test').height(origin_height+height);
+        	 event.preventDefault();
+         })
+         $('#test').on('touchend',function(e){
+        	 
+         })
+       })
+    </script>
+</html>

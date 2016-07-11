@@ -30,7 +30,22 @@
 			}
 		}
 	}
-	
-	
-	
+}
+
+
+.moin-gift-box{
+	li{
+		padding:5px;
+		
+		.moin-product-info{
+			padding:5px;
+			.product-title{
+				font-size:14px;
+			}
+			.product-gold{
+				font-size:14px;
+				color:$main-color;
+			}
+		}
+	}
 }
